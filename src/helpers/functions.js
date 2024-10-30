@@ -82,9 +82,6 @@ async function callGemini({ prompt, context }) {
 }
 
 async function fetchGitHubRepos(queryParams) {
-    const GITHUB_TOKEN =
-        "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";
-
     const config = {
         method: "get",
         maxBodyLength: Infinity,
@@ -92,7 +89,6 @@ async function fetchGitHubRepos(queryParams) {
         params: queryParams?.param,
         headers: {
             Accept: "application/vnd.github+json",
-            Authorization: `Bearer ${GITHUB_TOKEN}`,
             "X-GitHub-Api-Version": "2022-11-28",
         },
     };
