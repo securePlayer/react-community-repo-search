@@ -1,0 +1,16 @@
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.select {
+    width: 100%;
+}
+
+.icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; // Prevents icon from capturing clicks
+}

@@ -1,0 +1,32 @@
+.body-container {
+    > div {
+        margin-bottom: 10px;    
+    }
+
+    .copy-url-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    
+        > div {
+            border-radius: 10px;
+            border: 1px solid darkgrey;
+            padding: 5px 15px;
+            cursor: pointer;
+
+            > span {
+                margin-right: 10px;
+            }
+        }
+    }
+    
+    .stats-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    
+        > div {
+            gap: 5px;
+        }
+    }
+}

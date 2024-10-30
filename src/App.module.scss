@@ -1,0 +1,15 @@
+.container {
+    .content {
+        .options {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+
+            > div {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+    }
+}

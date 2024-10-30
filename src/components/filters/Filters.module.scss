@@ -1,0 +1,36 @@
+.container {
+    .filter-inputs {
+        display: flex;
+        align-items: center;
+        // gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .advance-filter-trigger {
+        cursor: pointer;
+    }
+
+    .chips-container {
+        gap: 10px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 10px;
+        padding-left: 0;
+
+        .chips {
+            background-color: grey;
+            border-radius: 10px;
+            width: fit-content;
+            padding: 5px 10px;
+            color: white;
+            cursor: pointer;
+        }
+    }
+}
+
+.modal-body {
+    > div {
+        padding: 10px;
+    }
+}

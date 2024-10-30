@@ -1,0 +1,77 @@
+// CustomModal.module.scss
+.modal {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 500px;
+  width: 100%; // Make it responsive
+  position: relative; // Relative positioning for child elements
+  z-index: 1000; // Ensure modal has a high z-index
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed; // Fixed positioning for full-screen overlay
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex; // Use flexbox to center modal
+  justify-content: center; // Center horizontally
+  align-items: center; // Center vertically
+  z-index: 999; // Overlay should be below the modal but above other content
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+
+  &:hover {
+    color: red; // Change color on hover for better UX
+  }
+}
+
+.body {
+  margin-top: 20px;
+
+  max-height: 60vh;
+  overflow: auto;
+  padding: 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+
+  .clearButton,
+  .applyButton {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #0056b3; // Darker blue on hover
+    }
+  }
+}

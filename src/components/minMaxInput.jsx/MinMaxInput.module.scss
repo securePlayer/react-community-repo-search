@@ -1,0 +1,40 @@
+.rangeInputContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.label {
+}
+
+.inputs {
+  display: flex;
+  gap: 5px;
+
+  .input {
+    width: 5em;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+    &:focus {
+      border-color: #007bff;
+      outline: none;
+    }
+
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      // -webkit-appearance: none;
+      margin: 0;
+      width: 30px;
+      height: 30px;
+    }
+
+    // Larger button styles
+    & + & {
+      padding-left: calc(10px + 20px); // Adjusts padding for larger buttons
+      padding-right: calc(10px + 20px);
+    }
+  }
+}

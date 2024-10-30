@@ -1,0 +1,66 @@
+.container {
+    padding: 30px;
+    padding-top: 0;
+
+    .ai-search {
+        text-decoration: underline;
+        cursor: pointer;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    
+    .actions-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        .filters-container {
+            margin-bottom: 20px;
+            flex: auto;
+        }
+    
+        .sort-container {
+            margin-bottom: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            height: fit-content;
+        }
+    }
+
+    .item-container {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .item-info-container {
+            .item-name {
+                text-decoration: underline;
+                font-weight: bold;
+                cursor: pointer;
+            }
+    
+            .stats-container {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+    
+                .stats {
+                    display: flex;
+                    align-items: center;
+                    gap: 3px;
+                }
+    
+                .clickable-stats {
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .quick-view {
+            
+        }
+    }
+}
