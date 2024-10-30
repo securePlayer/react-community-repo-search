@@ -83,7 +83,7 @@ async function callGemini({ prompt, context }) {
 
 async function fetchGitHubRepos(queryParams) {
     const GITHUB_TOKEN =
-        "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";
+        "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";
 
     const config = {
         method: "get",
